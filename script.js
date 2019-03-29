@@ -53,7 +53,7 @@ $(document).ready(function () {
     var weatherRequest = $.ajax({
       method: 'GET',
       dataType: 'jsonp',
-      url: 'https://api.wunderground.com/api/d6fadca18738e4ec/geolookup/conditions/forecast/q/' + location + '.json'
+      url: 'https://api.darksky.net/forecast/3c052dd3a7fad842f15459aa7efab324/' + location
     });
     // If getting was successful, send data to be processed
     weatherRequest.done(function(data) {
