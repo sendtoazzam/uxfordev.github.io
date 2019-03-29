@@ -49,6 +49,7 @@ $(document).ready(function () {
 
   // Send request to API to get weather data
   function getWeather(location) {
+    console.log('https://api.wunderground.com/api/d6fadca18738e4ec/geolookup/conditions/forecast/q/' + location + '.json');
     var weatherRequest = $.ajax({
       method: 'GET',
       url: 'https://api.wunderground.com/api/d6fadca18738e4ec/geolookup/conditions/forecast/q/' + location + '.json'
